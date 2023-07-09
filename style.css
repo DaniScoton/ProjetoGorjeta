@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme:ital,wght@0,500;0,600;1,400&display=swap');
+
+body{
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: row;
+    background: #dfdede;
+    height: 97vh;
+}
+
+.parte-1{
+    width: 50vw;
+    height: 98vh;
+    background: #ffffff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.h1{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+label{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.div-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#preco{
+    width: 230px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+}
+
+#taxa-select{
+    width: 230px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#pessoas{
+    width: 230px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+}
+
+.custo-jantar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.taxa-servico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dividir-conta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#botao{
+    width: 250px;
+    height: 50px;
+    background-color: #e5b224;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+    margin-top: 8px;
+}
+
+.div-botao{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.parte-2{
+    width: 50vw;
+    height: 98vh;
+    background-color:  #f0ce71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+img{
+    width: 45vw;
+    height: 95vh;
+    padding: 25px 5px 10px 5px;   
+}
+
+#valor-calculado{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #000000;
+    font-size: 20px;
+    margin-top: 40px;
+    background-color: #e5b224;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    margin-left: 102px;
+}
+
+#valor-por-cabeca{
+    font-size: 40px;
+}
+
+/*responsividade*/
+
+@media screen and (max-width: 1640px){
+
+    .parte-2{
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .parte-1{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 567px){
+    h1{
+        font-size: 20px;
+    }
+
+    #valor-calculado{
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 470px){
+    h1{
+        display: flex;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 360px){
+
+    label{
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    #valor-calculado{
+        margin-left: 30px
+    }
+}

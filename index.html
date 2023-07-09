@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gorjetas</title>
+</head>
+
+<body>
+    <div class="parte-1"> <img src="img/Bitcoin.gif"></div>
+    <div class="parte-2">
+        <form>
+            <div class="h1">
+                <h1>Cálculo do Jantar + Gorjeta</h1>
+            </div>
+            <div class="div-input">
+                <div class="custo-jantar">
+                    <label for="preco" class="label-preco">Quanto custou o jantar?</label>
+                    <input type="text" id="preco" placeholder="  R$  Valor Redondo" >
+                </div>
+                <div class="taxa-servico">
+                    <label for="taxa" class="label-taxa">Qual a taxa de serviço?</label>
+                    <select id="taxa-select">
+                        <option disabled selected value="0">-- Defina a Taxa --</option>
+                        <option value="0.3">30% - Taxa de serviço ótima + Cover</option>
+                        <option value="0.2">20% - Taxa de serviço + Cover</option>
+                        <option value="0.15">15% - Taxa de serviço excelente</option>
+                        <option value="0.1">10% - Taxa de serviço boa</option>
+                        <option value="0.05">5% - Taxa de serviço ruim</option>
+                    </select>
+      
+                </div>
+                <div class="dividir-conta">
+                    <label for="pessoas" class="label-pessoas">Quantas pessoas vão dividir a conta?</label>
+                    <input type="text" id="pessoas">
+                </div>
+            </div>
+            <div class="div-botao">
+                <input type="button" id="botao" onclick="calcularConta()" value="Calcular" />
+            </div>
+            <div id="valor-calculado">
+                <sup>R$</sup>
+                <span id="valor-por-cabeca">0.00</span>
+                <small id="each">cada</small>
+              </div>
+            </div>
+          
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
