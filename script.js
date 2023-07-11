@@ -2,7 +2,7 @@ document.getElementById("valor-calculado").style.display = "none";
 document.getElementById("each").style.display = "none";
 
 function calcularJantar(){
-    var totalConta = document.getElementById("preco").value;
+    var totalConta = parseFloat(document.getElementById("preco").value.replace(",", "."));
     var taxaServico = document.getElementById("taxa-select").value;
     var numeroPessoas = document.getElementById("pessoas").value;
 
